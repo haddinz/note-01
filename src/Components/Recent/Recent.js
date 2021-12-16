@@ -3,8 +3,9 @@ import { useLayoutEffect } from 'react'
 import { useCallback } from 'react'
 import { Row, Col, Title, Wrapper, WrapTitle, WrapMedia, TitleRecent, MediaRecent } from "./Recent.Style"
 import DataRecent from '../../Utils/DataRecent'
+import Fade from "react-reveal/Fade"
 
-const Recent = ({x , y}) => {
+const Recent = ({ x, y }) => {
     const datarecent = DataRecent
     const [activeIndex, setAktiveIndex] = useState(-1)
 
@@ -34,7 +35,7 @@ const Recent = ({x , y}) => {
         return [ref, dimesion]
     }
 
-    const [ref , {width, height}] = useSize()
+    const [ref, { width, height }] = useSize()
 
     return (
         <Row id="project">
@@ -45,11 +46,13 @@ const Recent = ({x , y}) => {
                 <Wrapper>
                     <WrapTitle>
                         {datarecent.map(({ title }, index) => (
-                            <TitleRecent
-                                onMouseEnter={() => setAktiveIndex(index)}
-                                onMouseLeave={() => setAktiveIndex(-1)}>
-                                <h1>{title}</h1>
-                            </TitleRecent>
+                            <Fade bottom duration={1000}>
+                                <TitleRecent
+                                    onMouseEnter={() => setAktiveIndex(index)}
+                                    onMouseLeave={() => setAktiveIndex(-1)}>
+                                    <h1>{title}</h1>
+                                </TitleRecent>
+                            </Fade>
                         ))}
                     </WrapTitle>
                     <WrapMedia>
@@ -59,13 +62,14 @@ const Recent = ({x , y}) => {
                             const xPost = isActive ? x : 0
                             const yPost = isActive ? y : 0
                             return <MediaRecent>
-                                <img 
-                                className={active && "is-active"} 
-                                src={media}
-                                ref={ref}
-                                style={{
-                                    transform: `translate(${xPost - width/2 }px, ${yPost - height/2}px)`,
-                                }}/>
+                                <img
+                                    className={active && "is-active"}
+                                    src={media}
+                                    alt="alt"
+                                    ref={ref}
+                                    style={{
+                                        transform: `translate(${xPost - width / 2}px, ${yPost - height / 2}px)`,
+                                    }} />
                             </MediaRecent>
                         })}
                     </WrapMedia>

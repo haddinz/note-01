@@ -12,6 +12,7 @@ import {
     Indikator,
     Container
 } from "./Testimonial.Style"
+import Fade from "react-reveal/Fade"
 
 const Testimonial = () => {
     const [step, setStep] = useState(1)
@@ -34,7 +35,7 @@ const Testimonial = () => {
                 {step === 1 &&
                     <Container>
                         <Content>
-                            <img src="./images/asset/testimonial4.jpg" />
+                            <img src={process.env.PUBLIC_URL + "/images/asset/testimonial1.jpg"} alt="unsplash.com" />
                             <Identitas>
                                 <p>Jhon Doe</p>
                                 <p>Designer</p>
@@ -48,58 +49,57 @@ const Testimonial = () => {
                     </Container>}
                 {step === 2 &&
                     <Container>
-                        
-                            <Content>
-                                <img src="./images/asset/testimonial1.jpg" />
-                                <Identitas>
-                                    <p>Luisanya</p>
-                                    <p>Photographer</p>
-                                </Identitas>
-                                <Qoute>
-                                    <p>
-                                        Lorem sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata ipsum dolor sit amet, consetetur sadipscing elitr
-                                    </p>
-                                </Qoute>
-                            </Content>
-                        
+                        <Content>
+                            <img src={process.env.PUBLIC_URL + "/images/asset/testimonial2.jpg"} alt="unsplash.com" />
+                            <Identitas>
+                                <p>Luisanya</p>
+                                <p>Photographer</p>
+                            </Identitas>
+                            <Qoute>
+                                <p>
+                                    Lorem sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata ipsum dolor sit amet, consetetur sadipscing elitr
+                                </p>
+                            </Qoute>
+                        </Content>
+
                     </Container>}
                 {step === 3 &&
                     <Container>
-                        
-                            <Content>
-                                <img src="./images/asset/testimonial2.jpg" />
-                                <Identitas>
-                                    <p>Jesica Rose</p>
-                                    <p>Student</p>
-                                </Identitas>
-                                <Qoute>
-                                    <p>
-                                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
-                                    </p>
-                                </Qoute>
-                            </Content>
-                        
+
+                        <Content>
+                            <img src={process.env.PUBLIC_URL + "/images/asset/testimonial3.jpg"} alt="unsplash.com" />
+                            <Identitas>
+                                <p>Jesica Rose</p>
+                                <p>Student</p>
+                            </Identitas>
+                            <Qoute>
+                                <p>
+                                    Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod.Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.
+                                </p>
+                            </Qoute>
+                        </Content>
+
                     </Container>}
                 {step === 4 &&
                     <Container>
-                        
-                            <Content>
-                                <img src="./images/asset/testimonial3.jpg" />
-                                <Identitas>
-                                    <p>Anie</p>
-                                    <p>Designer</p>
-                                </Identitas>
-                                <Qoute>
-                                    <p>
-                                        Over all though it was a great experience and  we have had lots of great feedback. We already started promoting our next event and I have been approached by 4 other companies who want to know more about it as they want to use it for their own events.
-                                    </p>
-                                </Qoute>
-                            </Content>
-                        
+
+                        <Content>
+                            <img src={process.env.PUBLIC_URL + "/images/asset/testimonial4.jpg"} alt="unsplash.com" />
+                            <Identitas>
+                                <p>Anie</p>
+                                <p>Designer</p>
+                            </Identitas>
+                            <Qoute>
+                                <p>
+                                    Over all though it was a great experience and  we have had lots of great feedback. We already started promoting our next event and I have been approached by 4 other companies who want to know more about it as they want to use it for their own events.
+                                </p>
+                            </Qoute>
+                        </Content>
+
                     </Container>}
             </Caraosel>
             <Button onClick={hanldeStep}>
-                <img src={Next} />
+                <img src={Next} alt="next" />
             </Button>
             <Slider>
                 {step === 1 &&

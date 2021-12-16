@@ -52,15 +52,15 @@ const Contact = () => {
                 </ColGroup>
                 <InputGroup>
                     <Address>
-                        <img src={iphone} />
+                        <img src={iphone} alt="icon"/>
                         <label>+682 - 999 - 000</label>
                     </Address>
                     <Address>
-                        <img src={home} />
+                        <img src={home} alt="icon"/>
                         <label>Sriwijaya Selatan, Buton</label>
                     </Address>
                     <Address>
-                        <img src={email} />
+                        <img src={email} alt="icon"/>
                         <label>email@insinyur.com</label>
                     </Address>
                 </InputGroup>

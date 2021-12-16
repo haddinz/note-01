@@ -1,11 +1,11 @@
 import React from 'react'
 import Openbook from "../svg/Openbook.svg"
-import { Headers, Box, BoxOne, BoxTwo, BoxFour, BoxThree, Head, Home, Label, Button, H1 } from "./Header.Style"
+import { Headers, Box, BoxOne, BoxTwo, BoxFour, BoxThree, Head, Home, Label, Button} from "./Header.Style"
 import Fade from 'react-reveal/Fade'
 import { Link as Scroll } from 'react-scroll'
 
 
-const Header = () => {
+const Header = ({index}) => {
     return (
         <Headers id="home">
             <Box>
@@ -24,7 +24,7 @@ const Header = () => {
                             Made on Your Website
                         </Fade>
                     </h1>
-                    <img src="/images/Asset/me-2.png" />
+                    <img src={process.env.PUBLIC_URL + "/images/asset/me2.png"} alt="header"/>
                 </Home>
                 <Label>
                     <p>
@@ -32,7 +32,7 @@ const Header = () => {
                         <br />so that your customers get what you provide
                     </p>
                     <Button>
-                        <Scroll activeClass="active" to="contact" spy={true} smooth={true} offset={-60} duration={1000}><img src={Openbook} /></Scroll>
+                        <Scroll activeClass="active" to="contact" spy={true} smooth={true} offset={-60} duration={1000}><img src={Openbook} alt="book"/></Scroll>
                     </Button>
                 </Label>
             </Head>

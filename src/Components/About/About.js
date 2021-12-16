@@ -11,7 +11,7 @@ const About = () => {
             <Col>
                 <ColImage>
                     <Fade left>
-                        <img src="./images/asset/me1.png" />
+                        <img src={process.env.PUBLIC_URL + "/images/asset/me1.png"} alt="me"/>
                     </Fade>
                 </ColImage>
                 <ColAbout>
