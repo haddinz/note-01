@@ -66,7 +66,6 @@ export const WrapMedia = styled.div`
 export const MediaRecent = styled.div`
     position: fixed;
     top: 0;
-    left: -300px;
     width: 100%;
     height: 100%;
     img{
