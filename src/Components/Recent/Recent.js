@@ -4,6 +4,7 @@ import { useCallback } from 'react'
 import { Row, Col, Title, Wrapper, WrapTitle, WrapMedia, TitleRecent, MediaRecent } from "./Recent.Style"
 import DataRecent from '../../Utils/DataRecent'
 import Fade from "react-reveal/Fade"
+import { Box } from '../Header/Header.Style'
 
 const Recent = ({ x, y }) => {
     const datarecent = DataRecent
@@ -39,6 +40,7 @@ const Recent = ({ x, y }) => {
 
     return (
         <Row id="project">
+            <Box></Box>
             <Col>
                 <Title>
                     <h3>My Recent Project</h3>

@@ -5,6 +5,11 @@ export const Row = styled.section`
     height: 765px;
     display: flex;
     justify-content: center;
+    position: relative;
+
+    @media screen and (max-width: 500px){
+        height: 600px;
+    }
 `
 export const Col = styled.div`
     width: 80%;
@@ -34,8 +39,15 @@ export const WrapTitle = styled.div`
     position: absolute;
     z-index: 1;
     top: 120px;
+
     &:hover h1{
         opacity: 0.1;
+    }
+
+    @media screen and (max-width : 768px){
+        width: 100%;
+        /* display: grid;
+        place-content: center; */
     }
 `
 export const TitleRecent = styled.div`
@@ -53,6 +65,16 @@ export const TitleRecent = styled.div`
         opacity: 1;
         cursor: pointer;
     }
+
+    @media screen and (max-width : 768px){
+        font-size: 52px;
+    }
+
+    @media screen and (max-width : 500px){
+        font-size: 38px;
+        align-items: flex-start;
+        width: 80%;
+    }
 `
 export const WrapMedia = styled.div`
     width: 100%;
@@ -62,12 +84,21 @@ export const WrapMedia = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 768px){
+        display: none;
+    }
+
+    @media screen and (max-width: 500px){
+        display: none;
+    }
 `
 export const MediaRecent = styled.div`
     position: fixed;
     top: 0;
     width: 100%;
-    height: 100%;
+    height: 50%;
+
     img{
         max-width: 800px;
         height: 300px;
@@ -77,6 +108,11 @@ export const MediaRecent = styled.div`
 
         &.is-active{
             opacity: 1;
+        }
+
+        @media screen and (max-width : 500px){
+            max-width: 500px;
+            height: 100px;
         }
     }
 `

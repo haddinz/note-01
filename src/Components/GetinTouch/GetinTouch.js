@@ -22,10 +22,10 @@ const GetinTouch = () => {
             <Col>
                 <SubColloum>
                     <Fade bottom duration={1000}>
-                    <h1>Get In Touch</h1>
-                    <h3>Based In KoutaLauma, Working WorldWide <br />
-                        GT Local Time : 07:00 AM - 21:00 PM
-                    </h3>
+                        <h1>Get In Touch</h1>
+                        <h3>Based In KoutaLauma, Working WorldWide <br />
+                            GT Local Time : 07:00 AM - 21:00 PM
+                        </h3>
                     </Fade>
                 </SubColloum>
                 <LinkColloum>

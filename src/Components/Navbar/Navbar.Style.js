@@ -8,9 +8,6 @@ export const Navbar = styled.section`
     z-index: 100;
 `
 export const Nav = styled.div`
-    position: relative;
-    left: 50%;
-    transform: translate(-50%);
     z-index: 100;
     display: flex;
     justify-content: space-between;
@@ -19,7 +16,7 @@ export const Nav = styled.div`
     background-color: ${({scroll}) => (scroll ? '#212121' : 'tranparent')};
     transition: ease-in-out .3s;
 
-    @media screen and (max-width : 768px){
+    @media screen and (max-width : 900px){
         background-color: #212121;
     }
 `
@@ -30,7 +27,7 @@ export const NavbarBrand = styled(LinkScroll)`
     align-items: center;
     margin-left: 10%;
     z-index: 1;
-    @media screen and (max-width : 768px){
+    @media screen and (max-width : 900px){
         color: #F1F0EC;
     }
 `
@@ -44,7 +41,7 @@ export const NavIcon = styled.div`
         cursor: pointer;
     }
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 900px){
         display: flex;
         align-items: center;
         justify-content: center;
@@ -59,7 +56,7 @@ export const NavbarCol = styled.nav`
     margin-right: 10%;
 `
 export const NavItem = styled.li`
-    width: 40%;
+    width: 530px;
     height: 100%;
     position: absolute;
     right: 0;
@@ -68,7 +65,7 @@ export const NavItem = styled.li`
     align-items: center;
     justify-content: space-between;
 
-    @media screen and (max-width: 768px){
+    @media screen and (max-width: 900px){
         display: none;
     }
 `
@@ -76,7 +73,7 @@ export const NavLink = styled(LinkScroll)`
     color: ${({scroll}) => (scroll ? '#F1F0EC' : '#212121')};
     font-family: "poppins";
     font-weight: medium;
-    font-size: 18px;
+    font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
     &:hover{

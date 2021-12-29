@@ -12,10 +12,12 @@ import { Row,
     InputForm, 
     ColGroup, 
     Address } from "./Contact.Style"
+import { Box } from "../Header/Header.Style"
 
 const Contact = () => {
     return (
         <Row id="contact">
+            <Box></Box>
             <ColHeader>
                 <h3>Any Question</h3>
                 <h2>Please Fell Free To Contact Me</h2>

@@ -42,7 +42,7 @@ const Home = () => {
       <Header />
       <Testimonial/>
       <Recent x={x} y={y} />
-      <About />
+      <About /> 
       <Contact />
       <GetinTouch />
     </>

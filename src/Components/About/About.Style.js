@@ -2,9 +2,12 @@ import styled from "styled-components";
 
 export const Row = styled.section`
     width: 100%;
-    height: 750px;
-    z-index: 2;
+    height: 800px;
+    /* z-index: 2; */
     position: relative;
+    display: grid;
+    place-items: center;
+    
     h3{
         position: absolute;
         left: 50%;
@@ -13,101 +16,135 @@ export const Row = styled.section`
         font-weight: normal;
         font-size: 20px;
     }
+
+    @media screen and (max-width: 768px){
+        height: 650px;
+        padding-bottom: 50px;
+    }
 `
 export const Col = styled.div`
     width: 80%;
-    height: 80%;
-    position: absolute;
-    left: 10%;
-    top: 100px;
+    height: 100%;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 `
 export const ColImage = styled.div`
+    width: 90%;
+    height: 100%;
     display: grid;
     place-items: center;
-
-    img:hover{
-        transform: scale(1.1);
-        animation: 1.5s ease-in-out;
+    img{
+        max-width: 100%;
+        max-height: 100%;
     }
-    @media screen and (max-width: 748px){
-    display: inline-block;
-    position: absolute;
-    top: 150px;
-        img{
-            width: 250px;
-            min-height: 100px;
-        }
+
+    @media screen and (max-width: 768px){
+        display: none;
     }
 `
 export const ColAbout = styled.div`
-    position: absolute;
-    width: 600px;
-    height: 100%;
-    right: 20px;
+    width: 100%;
+    height: 70%;
+    position: relative;
+`
+export const Word = styled.div`
+    height: 90%;
+    width: 100%;
+    padding: 20px;
     h2{
-        margin: 10px 0 50px 0;
-        line-height: 17px;
+        margin-bottom: 20px;
+        width: 90%;
+        font-size: 2.2vw;
     }
     p{
-        width: 400px;
-        padding-top: 20px;
-        line-height: 17px;
+        font-size: 16px;
+        padding: 5px 0;
+        width: 90%;
     }
 
-    @media screen and (max-width: 748px){
-        left: 0;
+    @media screen and (max-width: 768px){
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
         h2{
+            width: 80%;
             font-size: 18px;
-            line-height: 14px;
-            margin: 0 0 50px 0;
         }
         p{
-            padding: 10px;
-            margin-left: 260px;
+            width: 80%;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        h2{
+            width: 90%;
             font-size: 16px;
-            line-height: 17px;
-            width: 300px;
+        }
+        p{
+            width: 90%;
+            font-size: 14px;
         }
     }
 `
+export const AboutLink = styled.div`
+    width: 100%;
+    display: grid;
+    place-items: center;
+    margin-top: 20px;
+`
 export const Button = styled.button`
-    background: none;
+    position: relative;
+    border-radius: 50% 50%;
     border: 2px solid #212121;
     padding: 40px 40px;
     cursor: pointer;
-    border-radius: 50% 50%;
-    transition: color 0.4s ease-in-out;
-    position: relative;
+    transition: none.4s ease-in;
+    z-index: 1;
+    background-color: #F1F0EC;
     overflow: hidden;
-    margin-left: 200px;
-    margin-top: 80px;
+
+    img{
+        z-index: 1;
+    }
+
     &::before{
-        content: "";
         position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background: #C32D13;
+        content: " ";
         z-index: -1;
-        transition: transform 0.5s;
-        transform-origin: 0 0;
-        transform: scaleX(0);
-        border-radius: 0 50% 50% 0;
     }
-        &:hover::before{
-            transform: scaleX(1);
+
+    &::after{
+        position: absolute;
+        content: " ";
+        z-index: -1;
+        height: 100%;
+        left: -100%;
+        top: 0;
+        transform: skew(50deg);
+        transition-duration: 0.6s;
+        transform-origin: top left;
+        width: 0;
+        background: #ff96ad;
     }
+
+    &:hover:after{
+        height: 100%;
+        width: 200%;
+    }
+
     &:hover img{
         transform: scale(1.1);
     }
-    
-    @media screen and (max-width: 748px){
-        /* margin-left: 350px; */
-        position: absolute;
-        bottom: 50px;
-        right: 130px;
+
+    @media screen and (max-width: 768px){
+        padding: 35px 35px;
     }
+
+    @media screen and (max-width: 500px){
+        padding: 30px 30px;
+    }
+
 `

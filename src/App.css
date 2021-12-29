@@ -10,15 +10,15 @@
         transform: translateX(0);
     }
     100%{
-        transform: translateX(800px);
+        transform: translateX(100%);
     }
 }
 @keyframes animation1{
     0%{
-        transform: translateY(0);
+        transform: translateX(0);
     }
     100%{
-        transform: translateX(-950px);
+        transform: translateX(-50vw);
     }
 }
 @keyframes animation2{

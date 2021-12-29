@@ -5,7 +5,7 @@ export const Row = styled.section`
     width: 100%;
     height: 750px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
     background-color: #212121;
 `
 export const Col = styled.div`
@@ -34,6 +34,14 @@ export const SubColloum = styled.div`
             font-size: 18px;
         }
     }
+    @media screen and (max-width: 500px){
+        h1{
+            font-size: 46px;
+        }
+        h3{
+            font-size: 16px;
+        }
+    }
 `
 export const LinkColloum = styled.div`
     display: flex;
@@ -41,6 +49,10 @@ export const LinkColloum = styled.div`
     color: white;
     justify-content: space-between;
     margin-top: 80px;
+
+    @media screen and (max-width: 500px){
+        width: 90%;
+    }
 `
 export const ColLink = styled.div`
     line-height: 30px;
@@ -100,6 +112,7 @@ export const Copyright = styled.div`
     border-top: 1px solid #707070;
     display: grid;
     place-items: center;
+    
     p{
         margin-top: 30px;
         color: #fff;

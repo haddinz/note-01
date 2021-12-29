@@ -11,8 +11,9 @@ export const Col = styled.div`
     height: 140px;
     color: #212121;
     position: relative;
+    padding: 30px 0;
+
     & h3{
-        margin-top: 80px;
         font-size: 20px;
         font-weight: normal;
     }
@@ -30,6 +31,7 @@ export const Caraosel = styled.div`
     display: flex;
     justify-content: space-between;
     background-color: #212121;
+    z-index: 1;
 `
 export const Content = styled.div`
     width: 100%;
@@ -40,16 +42,8 @@ export const Content = styled.div`
     padding: 50px 50px;
     transition: 2s ease;
     animation: animText 0.5s ease-in;
-    & img{
-        width: 70px;
-        max-height: 70px;
-        border-radius: 50%;
-        position: absolute;
-        left: 50px;
-        top: 50px;
-    }
 
-    @media screen and (max-width: 748px){
+    @media screen and (max-width: 768px){
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -59,24 +53,39 @@ export const Container = styled.div`
     width: 100%;
     height: 100%;
 `
+export const TitleHero = styled.div`
+    width: 100%;
+    height: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    & img{
+        width: 70px;
+        max-height: 70px;
+        border-radius: 50%;
+        position: absolute;
+    }
+`
 export const Identitas = styled.div`
-    margin:8px 20px;
     font-size: 20px;
     font-weight: normal;
     color: white;
     position: absolute;
-    left: 120px;
-    @media screen and (max-width: 748px){
+    top: 80px;
+    text-align: center;
+    @media screen and (max-width: 768px){
         font-size: 16px;
     }
 `
 export const Qoute = styled.div`
-    margin-left: 100px;
-    width: 700px;
+    width: 100%;
     position: absolute;
-    right: 50px;
+    left: 0;
+    top: 200px;
+    padding: 20px 50px;
+    text-align: center;
     & p{
-        font-size: 24px;
+        font-size: 20px;
         font-style: italic;
         color: white;
     }
@@ -84,7 +93,7 @@ export const Qoute = styled.div`
         content: " '' ";
         font-size: 28px;
     }
-    @media screen and (max-width: 748px){
+    @media screen and (max-width: 768px){
         width: 100%;
         margin-left: 0;
         left: 0;
@@ -92,6 +101,11 @@ export const Qoute = styled.div`
         padding: 15px;
         p{
             font-size: 16px;
+        }
+    }
+    @media screen and (max-width: 500px){
+        p{
+            font-size: 14px;
         }
     }   
 `
@@ -103,23 +117,27 @@ export const Button = styled.button`
     border: none;
     right: 200px;
     bottom: 150px;
+    z-index: 10;
     &:hover{
         cursor: pointer;
     }
-    @media screen and (max-width: 748px){
+    @media screen and (max-width: 768px){
         right: 100px;
+        padding: 30px 35px;
+    }
+    @media screen and (max-width: 500px){
+        right: 80px;
         padding: 30px 35px;
     }
 `
 export const Slider = styled.div`
+    width: 100%;
     position: absolute;
-    left: 48%;
     bottom: 180px;
+`
+export const Shift = styled.div`
     display: flex;
-    
-    @media screen and (max-width: 748px){
-        left: 46%;
-    }
+    justify-content: center;
 `
 export const Indikator = styled.div`
     width: 10px;

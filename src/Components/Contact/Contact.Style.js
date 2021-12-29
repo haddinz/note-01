@@ -26,6 +26,19 @@ export const ColHeader = styled.div`
         font-size: 28px;
         color: #212121;
     }
+
+    @media screen and (max-width: 768px){
+        width: 100%;
+        h2{
+            font-size: 24px;
+        }
+    }
+
+    @media screen and (max-width: 500px){
+        h2{
+            font-size: 20px;
+        }
+    }
 `
 export const ColBody = styled.div`
     width: 80%;
@@ -37,7 +50,8 @@ export const ColBody = styled.div`
 `
 export const ColGroup = styled.div`
     width: 80%;
-    height: 60vh;
+    /* height: 60vh; */
+    height: 430px;
     position: absolute;
     top: 5px;
     padding: 50px;
@@ -61,10 +75,12 @@ export const TextInput = styled.div`
 export const Input = styled.div`
     border: none;
     position: relative;
-    width: 350px;
+    /* width: 350px; */
+    width: 48%;
     height: 60px;
     margin-bottom: 20px;
     border-bottom: 2px solid #F1F0EC;
+    
     input{
         display: block;
         width: 100%;
@@ -104,6 +120,7 @@ export const Input = styled.div`
             font-size: 14px;
         }
     }
+
 `
 export const InputForm = styled.div`
     display: block;
@@ -170,8 +187,8 @@ export const InputGroup = styled.div`
     position: absolute;
     bottom: 50px;
 
-    @media screen and (max-width: 748px){
-        width: 80%;
+    @media screen and (max-width: 948px){
+        width: 100%;
     }
 `
 export const Address = styled.div`
@@ -185,5 +202,9 @@ export const Address = styled.div`
             transform: scale(1.1);
             cursor: pointer;
         }
+    }
+
+    @media screen and (max-width: 748px){
+        font-size: 12px;
     }
 `
