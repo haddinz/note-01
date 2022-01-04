@@ -36,7 +36,7 @@ export const ColHeader = styled.div`
 
     @media screen and (max-width: 500px){
         h2{
-            font-size: 20px;
+            font-size: 5.4vw;
         }
     }
 `
@@ -47,10 +47,13 @@ export const ColBody = styled.div`
     justify-content: center;
     align-items: center;
     position: relative;
+
+    @media screen and (max-width: 500px){
+        width: 100%;
+    }
 `
 export const ColGroup = styled.div`
     width: 80%;
-    /* height: 60vh; */
     height: 430px;
     position: absolute;
     top: 5px;
@@ -183,12 +186,12 @@ export const InputGroup = styled.div`
     width: 50%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     position: absolute;
     bottom: 50px;
 
     @media screen and (max-width: 948px){
-        width: 100%;
+        width: 90%;
     }
 `
 export const Address = styled.div`
@@ -204,7 +207,7 @@ export const Address = styled.div`
         }
     }
 
-    @media screen and (max-width: 748px){
-        font-size: 12px;
+    @media screen and (max-width: 500px){
+        font-size: 10px;
     }
 `

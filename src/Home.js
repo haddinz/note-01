@@ -1,12 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import Navbars from "./Components/Navbar/Navbar";
 import Header from './Components/Header/Header';
-import Testimonial from './Components/Testimonial/Testimonial';
 import Recent from "./Components/Recent/Recent"
 import About from './Components/About/About';
 import Contact from './Components/Contact/Contact';
 import GetinTouch from './Components/GetinTouch/GetinTouch';
 import Sidenav from './Components/NavSide/Sidenav';
+import Testi from './Components/Testi/Testi';
 
 
 const Home = () => {
@@ -40,7 +40,7 @@ const Home = () => {
       <Sidenav open={open} handleclick={handleclick}/>
       <Navbars handleclick={handleclick}/>
       <Header />
-      <Testimonial/>
+      <Testi />
       <Recent x={x} y={y} />
       <About /> 
       <Contact />

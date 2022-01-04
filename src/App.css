@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 
+/* animation */
 @keyframes animation{
     0%{
         transform: translateX(0);
@@ -57,4 +58,14 @@ h3{
 p{
     font-family: 'Nunito Sans';
     font-weight: normal;
+}
+
+/* slider */
+.slick-prev::before,
+.slick-next::before{
+    display: none;
+}
+.custom-indicator {
+    left: 0;
+    top: 440px;
 }

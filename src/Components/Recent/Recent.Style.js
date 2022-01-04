@@ -8,7 +8,7 @@ export const Row = styled.section`
     position: relative;
 
     @media screen and (max-width: 500px){
-        height: 600px;
+        height: 550px;
     }
 `
 export const Col = styled.div`
@@ -57,6 +57,7 @@ export const TitleRecent = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 6px 0;
     a{
         color: #212121;
         text-decoration: none;
@@ -71,7 +72,7 @@ export const TitleRecent = styled.div`
     }
 
     @media screen and (max-width : 500px){
-        font-size: 38px;
+        font-size: 9vw;
         align-items: flex-start;
         width: 80%;
     }
@@ -96,6 +97,7 @@ export const WrapMedia = styled.div`
 export const MediaRecent = styled.div`
     position: fixed;
     top: 0;
+    left: -250px;
     width: 100%;
     height: 50%;
 

@@ -118,4 +118,10 @@ export const Copyright = styled.div`
         color: #fff;
         font-size: 12px;
     }
+
+    @media screen and (max-width: 500px){
+        p{
+            font-size: 10px;
+        }
+    }
 `

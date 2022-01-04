@@ -11,6 +11,10 @@ export const Headers = styled.section`
     @media screen and (max-width: 500px){
         height: 730px;
     }
+
+    @media screen and (max-width: 376px){
+        height: 650px;
+    }
 `
 export const Box = styled.div`
     position: absolute;
