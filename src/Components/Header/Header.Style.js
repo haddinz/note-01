@@ -77,69 +77,6 @@ export const BoxThree = styled.div`
         display: none;
     }
 `
-// export const Box = styled.div`
-//     width: 100%;
-//     height: 3000px;
-//     position: relative;
-//     background-color: #DDDBD7;
-//     &:after{
-//         position: absolute;
-//         content: "";
-//         height: 100%;
-//         width: 100%;
-//         backdrop-filter: blur(70px);
-//     }
-// `
-// export const BoxOne = styled.div`
-//     height: 100%;
-//     width: 100%;
-//     background-color: #F1F0EC;
-//     position: absolute;
-// `
-// export const BoxTwo = styled.div`
-//     position: absolute;
-//     height: 350px;
-//     width: 350px;
-//     background-color: #D3BC8A;
-//     top: 80px;
-//     left: 100px;
-//     border-radius: 50%;
-//     animation: animation linear 20s infinite alternate;
-//     animation-delay: 0.3s;
-
-//     @media screen and (max-width : 768px){
-//         display: none;
-//     }
-// `
-// export const BoxThree = styled.div`
-//     position: absolute;
-//     height: 100px;
-//     width: 100px;
-//     background-color: #5F61A0;
-//     right: 20px;
-//     top: 650px;
-//     border-radius: 50%;
-//     animation: animation1 10s infinite alternate;
-
-//     @media screen and (max-width : 768px){
-//         display: none;
-//     }
-// `
-// export const BoxFour = styled.div`
-//     position: absolute;
-//     height: 300px;
-//     width: 300px;
-//     background-color: #D3BC8A;
-//     top: 50%;
-//     left: 0;
-//     border-radius: 48%;
-//     animation: animation2 10s infinite alternate;
-
-//     @media screen and (max-width : 768px){
-//         display: none;
-//     }
-// `
-
 export const Head = styled.div`
     width: 80%;
     height: 100%;
@@ -182,6 +119,8 @@ export const ColHome = styled.div`
     @media screen and (max-width: 500px){
         h1{
             bottom: 200px;
+            padding: 0 10px;
+            font-weight: bolder;
         }
 
         img{
@@ -221,7 +160,7 @@ export const Label = styled.div`
         flex-direction: column;
         p{
             font-size: 14px;
-            margin-bottom: 10px;
+            margin: 0 auto 10px auto;
         }
     }
 `
@@ -257,7 +196,7 @@ export const Button = styled.button`
         transition-duration: 0.6s;
         transform-origin: top left;
         width: 0;
-        background: #ff96ad;
+        background: #D3BC8A;
     }
 
     &:hover:after{
@@ -275,6 +214,10 @@ export const Button = styled.button`
 
     @media screen and (max-width: 500px){
         padding: 30px 30px;
+
+        &:hover:after{
+            display: none;
+        }
     }
 
 `

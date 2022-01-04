@@ -131,7 +131,7 @@ export const Button = styled.button`
         transition-duration: 0.6s;
         transform-origin: top left;
         width: 0;
-        background: #ff96ad;
+        background: #D3BC8A;
     }
 
     &:hover:after{
@@ -149,6 +149,10 @@ export const Button = styled.button`
 
     @media screen and (max-width: 500px){
         padding: 30px 30px;
+
+        &:hover:after{
+            display: none;
+        }
     }
 
 `

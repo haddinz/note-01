@@ -46,8 +46,6 @@ export const WrapTitle = styled.div`
 
     @media screen and (max-width : 768px){
         width: 100%;
-        /* display: grid;
-        place-content: center; */
     }
 `
 export const TitleRecent = styled.div`
@@ -97,7 +95,7 @@ export const WrapMedia = styled.div`
 export const MediaRecent = styled.div`
     position: fixed;
     top: 0;
-    left: -250px;
+    /* left: -30px; */
     width: 100%;
     height: 50%;
 
