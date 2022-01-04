@@ -1,15 +1,17 @@
 {
   "files": {
-    "main.css": "/note-01/static/css/main.751c62cc.chunk.css",
-    "main.js": "/note-01/static/js/main.f0cc67a7.chunk.js",
-    "main.js.map": "/note-01/static/js/main.f0cc67a7.chunk.js.map",
+    "main.css": "/note-01/static/css/main.b1aaa1cc.chunk.css",
+    "main.js": "/note-01/static/js/main.f8f3ac2a.chunk.js",
+    "main.js.map": "/note-01/static/js/main.f8f3ac2a.chunk.js.map",
     "runtime-main.js": "/note-01/static/js/runtime-main.2779cc31.js",
     "runtime-main.js.map": "/note-01/static/js/runtime-main.2779cc31.js.map",
-    "static/js/2.281639fb.chunk.js": "/note-01/static/js/2.281639fb.chunk.js",
-    "static/js/2.281639fb.chunk.js.map": "/note-01/static/js/2.281639fb.chunk.js.map",
+    "static/css/2.d9625f8e.chunk.css": "/note-01/static/css/2.d9625f8e.chunk.css",
+    "static/js/2.84ffe4d4.chunk.js": "/note-01/static/js/2.84ffe4d4.chunk.js",
+    "static/js/2.84ffe4d4.chunk.js.map": "/note-01/static/js/2.84ffe4d4.chunk.js.map",
     "index.html": "/note-01/index.html",
-    "static/css/main.751c62cc.chunk.css.map": "/note-01/static/css/main.751c62cc.chunk.css.map",
-    "static/js/2.281639fb.chunk.js.LICENSE.txt": "/note-01/static/js/2.281639fb.chunk.js.LICENSE.txt",
+    "static/css/2.d9625f8e.chunk.css.map": "/note-01/static/css/2.d9625f8e.chunk.css.map",
+    "static/css/main.b1aaa1cc.chunk.css.map": "/note-01/static/css/main.b1aaa1cc.chunk.css.map",
+    "static/js/2.84ffe4d4.chunk.js.LICENSE.txt": "/note-01/static/js/2.84ffe4d4.chunk.js.LICENSE.txt",
     "static/media/Bars.b4e21a7f.svg": "/note-01/static/media/Bars.b4e21a7f.svg",
     "static/media/Behance.de8827a7.svg": "/note-01/static/media/Behance.de8827a7.svg",
     "static/media/Next.390edb15.svg": "/note-01/static/media/Next.390edb15.svg",
@@ -20,12 +22,14 @@
     "static/media/github.73e02056.svg": "/note-01/static/media/github.73e02056.svg",
     "static/media/home.b73a16eb.svg": "/note-01/static/media/home.b73a16eb.svg",
     "static/media/iphone.9feaaf9c.svg": "/note-01/static/media/iphone.9feaaf9c.svg",
-    "static/media/pinterest.415c731f.svg": "/note-01/static/media/pinterest.415c731f.svg"
+    "static/media/pinterest.415c731f.svg": "/note-01/static/media/pinterest.415c731f.svg",
+    "static/media/slick-theme.css": "/note-01/static/media/slick.c94f7671.ttf"
   },
   "entrypoints": [
     "static/js/runtime-main.2779cc31.js",
-    "static/js/2.281639fb.chunk.js",
-    "static/css/main.751c62cc.chunk.css",
-    "static/js/main.f0cc67a7.chunk.js"
+    "static/css/2.d9625f8e.chunk.css",
+    "static/js/2.84ffe4d4.chunk.js",
+    "static/css/main.b1aaa1cc.chunk.css",
+    "static/js/main.f8f3ac2a.chunk.js"
   ]
 }
