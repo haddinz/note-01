@@ -41,22 +41,23 @@
     }
 }
 
+/* font  */
 h1{
-    font-family: 'lora';
+    font-family: 'Lora', serif;
     font-weight: lighter;
 }
 
 h2{
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
     font-weight: bold;
 }
 
 h3{
-    font-family: 'poppins';
+    font-family: 'Poppins', sans-serif;
 }
 
 p{
-    font-family: 'Nunito Sans';
+    font-family: 'Poppins', sans-serif;
     font-weight: normal;
 }
 

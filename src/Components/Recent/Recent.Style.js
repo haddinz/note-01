@@ -46,6 +46,10 @@ export const WrapTitle = styled.div`
 
     @media screen and (max-width : 768px){
         width: 100%;
+
+        &:hover h1{
+            opacity: 1;
+        }
     }
 `
 export const TitleRecent = styled.div`
@@ -87,10 +91,6 @@ export const WrapMedia = styled.div`
     @media screen and (max-width: 768px){
         display: none;
     }
-
-    @media screen and (max-width: 500px){
-        display: none;
-    }
 `
 export const MediaRecent = styled.div`
     position: fixed;
@@ -111,8 +111,7 @@ export const MediaRecent = styled.div`
         }
 
         @media screen and (max-width : 500px){
-            max-width: 500px;
-            height: 100px;
+            display: none;
         }
     }
 `

@@ -98,6 +98,10 @@ export const AboutLink = styled.div`
     display: grid;
     place-items: center;
     margin-top: 20px;
+
+    @media screen and (max-width: 768px){
+        margin-top: 30px;
+    }
 `
 export const Button = styled.button`
     position: relative;
